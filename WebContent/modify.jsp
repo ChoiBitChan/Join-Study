@@ -43,7 +43,8 @@
 	
 	<form action="ModifyOk" method="post">
 		이름 : <input type="text" name="name" size="10" value=<%=name %>><br/>
-		아이디 : <%=id %><br/>
+		<%--아이디 : <%=id %><br/> --%>
+		아이디 : <input type="hidden" name="id" size="10" value=<%=id %>><%=id %><br/>
 		비밀번호 : <input type="text" name="pw" size="10"><br/>
 		전화번호 : <select name="phone1">
 			<option value="010">010</option>
